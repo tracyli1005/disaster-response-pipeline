@@ -10,15 +10,21 @@ and send it to appropriate organinzations to support
 We also need to build a web app which enables the staff to input new messages and get classification result.The web app will display some visualization of the data
 
 ## File structure
+
 - app
 | - template
+
 | |- master.html  # main page of web app
+
 | |- go.html  # classification result page of web app
+
 |- run.py  # Flask file that runs app
 
 - data
 |- disaster_categories.csv  # data to process 
+
 |- disaster_messages.csv  # data to process
+
 |- process_data.py
 
 - models
