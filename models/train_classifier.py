@@ -31,8 +31,8 @@ def load_data(database_filepath):
     '''
     engine = create_engine('sqlite:///'+ database_filepath)
     df = pd.read_sql_table('merged',engine)
-    X = df.message.values
-    Y=df.iloc[:,4:].values
+    X = df.message
+    Y=df.iloc[:,4:]
     category_names= df.columns[4:]
     return X,Y,category_names
 
@@ -77,8 +77,10 @@ def evaluate_model(model, X_test, Y_test, category_names):
     select 1 column to test accuracy score of the model
     '''
     Y_pred=model.predict(X_test)
-    print(classification_report(Y_test[:,35], Y_pred[:,35], target_names=category_names))
-    print(accuracy_score(Y_test[:,35], Y_pred[:,35]))
+    for i,col in enumerate(category_names):
+        print(col)
+        print(classification_report(Y_test[col], Y_pred[:,i]))
+        print('-'* 60)
 
 
 def save_model(model, model_filepath):
