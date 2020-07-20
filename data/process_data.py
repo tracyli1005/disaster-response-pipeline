@@ -44,6 +44,7 @@ def clean_data(df):
     
     # replace the original categories column with the new `categories` dataframe
     df=df.drop('categories',axis=1)
+    categories.loc[categories['related']>1,'related']=1
     categories['id']=df['id']
     df = df.merge(categories,how='outer',\
              on='id')
@@ -60,7 +61,7 @@ def save_data(df, database_filepath):
     Returns:
         None
     '''
-    engine = create_engine('sqlite:///../data/database_filepath')
+    engine = create_engine('sqlite:///'+ database_filepath)
     df.to_sql('merged', con=engine, index=False)
 
 
