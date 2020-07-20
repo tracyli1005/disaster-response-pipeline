@@ -12,23 +12,23 @@ We also need to build a web app which enables the staff to input new messages an
 ## File structure
 
 - app
-| - template
+   - template
 
-| |- master.html  # main page of web app
+      - master.html  # main page of web app
 
-| |- go.html  # classification result page of web app
+      - go.html  # classification result page of web app
 
-|- run.py  # Flask file that runs app
+   - run.py  # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data to process 
+   - disaster_categories.csv  # data to process 
 
-|- disaster_messages.csv  # data to process
+   - disaster_messages.csv  # data to process
 
-|- process_data.py
+   - process_data.py
 
 - models
-|- train_classifier.py
+   - train_classifier.py
 
 - README.md 
 
