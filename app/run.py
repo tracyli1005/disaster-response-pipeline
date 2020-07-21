@@ -46,6 +46,11 @@ def index():
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
     graphs=[]
+    data_one=[]
+    data_two=[]
+    data_three=[]
+    data_four=[]
+    
     data_one.append(Bar(
               x=genre_names,
               y=genre_counts
