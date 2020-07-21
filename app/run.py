@@ -57,7 +57,7 @@ def index():
              ))
     
     layout_one=dict(title= 'Distribution of Message Genres',
-                yaxis=dict(title= "Count")
+                yaxis=dict(title= "Count"),
                 xaxis=dict(title="Genre")
                    )
     
@@ -72,7 +72,7 @@ def index():
              ))
     
     layout_two=dict(title= 'Distribution of Categories of Direct Messages',
-                yaxis=dict(title= "Count")
+                yaxis=dict(title= "Count"),
                 xaxis=dict(title="Categories")
                    )
     
@@ -82,7 +82,7 @@ def index():
              ))
     
     layout_three=dict(title= 'Distribution of Categories of News Messages',
-                yaxis=dict(title= "Count")
+                yaxis=dict(title= "Count"),
                 xaxis=dict(title="Categories")
                    )
     
@@ -92,7 +92,7 @@ def index():
              ))
     
     layout_four=dict(title= 'Distribution of Categories of Social Messages',
-                yaxis=dict(title= "Count")
+                yaxis=dict(title= "Count"),
                 xaxis=dict(title="Categories")
                    )
     graphs.append(dict(data=data_one, layout=layout_one))
