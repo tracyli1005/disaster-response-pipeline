@@ -2,11 +2,11 @@
 
 ## Installation 
 Dependencies:
-Python, NumPy, Pandas,Json,Flask,Plotly,Sklearn,Nltk,SQLAlchemy,sys,re,pickle
+Python, NumPy, Pandas, Json, Flask, Plotly, Sklearn, Nltk, SQLAlchemy, sys, re, pickle
 
 ## File Descriptions
 There're 2 disaster data(messages and relevant categories) provided by Figure8. We need to build a machine learning pipeline to categorize the messages 
-and send it to appropriate organinzations to support
+and send it to appropriate organizations to support.
 We also need to build a web app which enables the staff to input new messages and get classification result.The web app will display some visualization of the data
 
 ## File structure
